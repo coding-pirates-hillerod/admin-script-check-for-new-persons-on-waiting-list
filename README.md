@@ -20,3 +20,45 @@ Først og fremmest logger scriptet automatisk ind i medlemssystemet - forudsat a
 Dernæst tjekker scriptet om det er blevet kørt før - reelt set hvorvidt der er blevet skabt en sqlite database eller ej.
 
 #### Step #2.1 - Scriptet _er ikke_ kørt før
+Er scriptet ikke kørt før, så opretter det blot en database kaldet "waitinglist.db" med tabel kaldet "persons", hvori personerne fra den udtrukket venteliste indsættes.
+
+#### Step #2.2 - Scriptet _er_ kørt før
+Er scriptet kørt før, så hentes først alle personer fra databasen (dvs. fra "waitinglist.db").
+
+Dernæst tjekkes der for, hvor nogen af de netop udtrukket personer fra medlemssystemets venteliste *ikke* er at finde "persons" tabellen i databasen.
+
+Er der personer fra den udtrukne venteliste som ikke findes i databasen, så indsættes først en ny record for hver person i databasen - da denne jo skal opdateres til næste gang scriptet køres - og afslutningsvist gemmes samme person(er) umiddelbart blot i txt fil kaldet "persons_not_on_waiting_list.txt", hvorudfra man så selv kan afgøre, hvordan man vil håndtere disse nye opskrivning på ens venteliste.
+
+## Hvordan man sætter scriptet op
+Hvis nogen vil gøre brug af scriptet, så følger her en vejledning til, hvordan dette gøres.
+
+### Step #1 - download og installer Python
+Først og fremmest skal man have Python installeret for at køre scriptet.
+
+Gå derfor til [python.org](https://www.python.org/) og download og installer Python.
+
+### Step #2 - download, installer og opsæt Git og GitHub og klon dette repo
+I'm sorry .. men hvis ikke du ved, hvordan man gør det her (hvilket er helt, HELT fair!), så få lige en til at hjælpe dig med det (for det er lidt "bøvlet" at forklare, og jeg, Jonas, orker det ikke rigtigt lige nu .. sorry).
+
+### Step #3 - installer dependencies
+Installer projektets dependencies ved at køre denn kommando:
+
+```python
+pip install -r requirements.txt
+```
+
+### Step #4 - skab en "credentials.txt" fil med dit login
+Skab i roden af projektet en fil kaldet "credentials.txt", hvor du blot på én linje indtaster:
+1. dit brugernavn til medlemssystemet
+2. laver et mellemrum
+3. dit password
+
+Her er et eksempel på, hvordan filen med brugernavn og password ville se ud for en fiktiv bruger:
+```txt
+mogens@iamgod.com EsmunTus%1968%
+```
+
+
+
+
+
