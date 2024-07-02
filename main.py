@@ -26,17 +26,17 @@ def main():
     goto_waitinglist_page()
 
     persons_on_waiting_list = extract_persons_on_waiting_list()
+
+    if not os.path.exists(PATH_TO_DB):
+        create_and_seed_db(persons_on_waiting_list)
+        exit()
+
     saved_persons_on_waiting_list = fetch_saved_waiting_list_persons()
 
-    # TODO: This whole section sucks ass - ie. it's confusing - so refactor that thang ..
     persons_not_in_saved_waiting_list = []
-    if os.path.exists(PATH_TO_DB):
-        for person in persons_on_waiting_list:
-            if person not in saved_persons_on_waiting_list:
-                persons_not_in_saved_waiting_list.append(person)
-
-    else:
-        create_and_seed_db(persons_on_waiting_list)
+    for person in persons_on_waiting_list:
+        if person not in saved_persons_on_waiting_list:
+            persons_not_in_saved_waiting_list.append(person)
 
     if persons_not_in_saved_waiting_list:
         save_new_persons_to_db(persons_not_in_saved_waiting_list)
