@@ -10,4 +10,10 @@ For det andet vil denne viden også give os en mulighed for at komme i kontakt m
 
 Disse 2 årsager har været baggrunden for overhovedet at lave dette script.
 
-## Opsætning af script
+## Om scriptet
+For nu fungerer scriptet som følger.
+
+### Automatisk login i medlemssystem og udtræk venteliste
+Først og fremmest logger scriptet automatisk ind i medlemssystemet - forudsat at man har husket at skabe en txt fil kaldet "credentials.txt" med sit brugernavn og password adskilt af blot et mellemrum - og udtrækker ens afdelings nuværende venteliste.
+
+
