@@ -19,4 +19,4 @@ Først og fremmest logger scriptet automatisk ind i medlemssystemet - forudsat a
 ### Step #2 - Tjek om script er blevet kørt før
 Dernæst tjekker scriptet om det er blevet kørt før - reelt set hvorvidt der er blevet skabt en sqlite database eller ej.
 
-#### Step #2.1 - Scriptet <u>er ikke</u> kørt før
+#### Step #2.1 - Scriptet _er ikke_ kørt før
