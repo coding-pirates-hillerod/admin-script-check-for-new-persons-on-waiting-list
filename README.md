@@ -22,6 +22,8 @@ Dernæst tjekker scriptet om det er blevet kørt før - reelt set hvorvidt der e
 #### Step #2.1 - Scriptet _er ikke_ kørt før
 Er scriptet ikke kørt før, så opretter det blot en database kaldet "waitinglist.db" med tabel kaldet "persons", hvori personerne fra den udtrukket venteliste indsættes.
 
+Når dette er gjort, så afsluttes scriptet blot, da der således ingen grund er til at gå videre med scriptets kode indtil næste gang det køres for tjek af nye opskrivninger.
+
 #### Step #2.2 - Scriptet _er_ kørt før
 Er scriptet kørt før, så hentes først alle personer fra databasen (dvs. fra "waitinglist.db").
 
