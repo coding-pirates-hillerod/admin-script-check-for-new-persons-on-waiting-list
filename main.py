@@ -50,7 +50,6 @@ def login_to_member_system() -> None:
     driver.get("https://members.codingpirates.dk/account/login/?next=/")
 
     creds = get_credentials()
-    print(creds)
 
     fill_form_element(By.ID, "id_username", creds[0])
     fill_form_element(By.ID, "id_password", creds[1])
