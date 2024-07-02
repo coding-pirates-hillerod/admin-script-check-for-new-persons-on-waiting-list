@@ -60,7 +60,12 @@ Her er et eksempel på, hvordan filen med brugernavn og password ville se ud for
 mogens@iamgod.com EsmunTus%1968%
 ```
 
+### Step #5 - kør scriptet
+Med dette sat op burde du nu være i stand til at køre scriptet. Om du så vælger at køre det manuelt fra terminalen en gang imellem, eller sætter det op til at køre automatisk via fx 'crontab' for macOS eller 'Task Scheduler' på Windows, ja, det må være op til dig selv.
 
+## Afsluttende bemærkninger
+Scriptet finder således for nu blot ud af, hvorvidt der er nye opskrivninger på ens CP venteliste. Og dette er gjort med FULDT overlæg! For om du blot vil have en Desktop notifikation, når nye børn skriver sig op, eller gerne automatisk vil sende emails ud til nye opskrivninger på ventelisten, ja, det er jo op til DIG at afgøre, og ikke mig/os.
 
+Om ikke andet kan du i hvert fald (nu) bruge dette scriptet til enten manuelt eller automatisk at udtrække oplysninger om nye opskrivning på din/jeres CP venteliste. Og hvad du som sagt så vil gøre med det, ja, det er - "tadaaa ..!!" - op til DIG.
 
 
