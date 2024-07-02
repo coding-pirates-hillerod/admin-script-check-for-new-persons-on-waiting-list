@@ -13,7 +13,10 @@ Disse 2 årsager har været baggrunden for overhovedet at lave dette script.
 ## Om scriptet
 For nu fungerer scriptet som følger.
 
-### Automatisk login i medlemssystem og udtræk venteliste
+### Step #1 - Automatisk login i medlemssystem og udtræk venteliste
 Først og fremmest logger scriptet automatisk ind i medlemssystemet - forudsat at man har husket at skabe en txt fil kaldet "credentials.txt" med sit brugernavn og password adskilt af blot et mellemrum - og udtrækker ens afdelings nuværende venteliste.
 
+### Step #2 - Tjek om script er blevet kørt før
+Dernæst tjekker scriptet om det er blevet kørt før - reelt set hvorvidt der er blevet skabt en sqlite database eller ej.
 
+#### Step #2.1 - Scriptet er __ikke__ kørt før
