@@ -66,6 +66,8 @@ Med dette sat op burde du nu være i stand til at køre scriptet. Om du så væl
 ## Afsluttende bemærkninger
 Scriptet finder således for nu blot ud af, hvorvidt der er nye opskrivninger på ens CP venteliste. Og dette er gjort med FULDT overlæg! For om du blot vil have en Desktop notifikation, når nye børn skriver sig op, eller gerne automatisk vil sende emails ud til nye opskrivninger på ventelisten, ja, det er jo op til DIG at afgøre, og ikke mig/os.
 
+Og "ps": dele af koden sutter sikkert røv, navngivning af variable kunne sikkert være bedre og .. blah blah blah .. men 'whatevs', forhåbentlig virker scriptet også for dig.
+
 Om ikke andet kan du i hvert fald (nu) bruge dette scriptet til enten manuelt eller automatisk at udtrække oplysninger om nye opskrivning på din/jeres CP venteliste. Og hvad du som sagt så vil gøre med det, ja, det er - "tadaaa ..!!" - op til DIG.
 
 
