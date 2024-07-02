@@ -36,18 +36,3 @@ def save_new_persons_to_db(persons: list[tuple]) -> None:
     con.commit()
 
     con.close()
-
-
-if __name__ == "__main__":
-    con = sqlite3.connect("waitinglist.db")
-
-    cur = con.cursor()
-
-    res = cur.execute("SELECT * FROM persons")
-
-    persons = res.fetchall()
-
-    for person in persons:
-        print(person[0])
-
-    con.close()
